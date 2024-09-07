@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School.Project.Systems.Services.Identity", "School.Project.Systems.Services.Identity\School.Project.Systems.Services.Identity.csproj", "{958B3F31-1134-4B8E-9762-4B4105E8AD24}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{3C69A77D-7872-402B-A57A-595560D9E0D5}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		Dockerfile = Dockerfile
+		.dockerignore = .dockerignore
+		NuGet.Config = NuGet.Config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School.Project.Systems.Services.Identity.Models", "School.Project.Systems.Services.Identity.Models\School.Project.Systems.Services.Identity.Models.csproj", "{0AC31BB0-97AD-43CB-8794-40F33D1FB200}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{40A167D6-897B-482B-B29A-99661CFAF4AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School.Project.Systems.Service.Identity.UnitTests", "School.Project.Systems.Service.Identity.UnitTests\School.Project.Systems.Service.Identity.UnitTests.csproj", "{FF9ADABB-A9BF-4EDF-BBA6-2FADD164CC72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School.Project.Systems.Service.Identity.IntegrationTests", "School.Project.Systems.Service.Identity.IntegrationTests\School.Project.Systems.Service.Identity.IntegrationTests.csproj", "{4763110D-49A3-4540-A0C4-B516C317A5DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{958B3F31-1134-4B8E-9762-4B4105E8AD24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{958B3F31-1134-4B8E-9762-4B4105E8AD24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{958B3F31-1134-4B8E-9762-4B4105E8AD24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{958B3F31-1134-4B8E-9762-4B4105E8AD24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AC31BB0-97AD-43CB-8794-40F33D1FB200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AC31BB0-97AD-43CB-8794-40F33D1FB200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AC31BB0-97AD-43CB-8794-40F33D1FB200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AC31BB0-97AD-43CB-8794-40F33D1FB200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF9ADABB-A9BF-4EDF-BBA6-2FADD164CC72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF9ADABB-A9BF-4EDF-BBA6-2FADD164CC72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF9ADABB-A9BF-4EDF-BBA6-2FADD164CC72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF9ADABB-A9BF-4EDF-BBA6-2FADD164CC72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4763110D-49A3-4540-A0C4-B516C317A5DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4763110D-49A3-4540-A0C4-B516C317A5DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4763110D-49A3-4540-A0C4-B516C317A5DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4763110D-49A3-4540-A0C4-B516C317A5DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FF9ADABB-A9BF-4EDF-BBA6-2FADD164CC72} = {40A167D6-897B-482B-B29A-99661CFAF4AB}
+		{4763110D-49A3-4540-A0C4-B516C317A5DB} = {40A167D6-897B-482B-B29A-99661CFAF4AB}
+	EndGlobalSection
+EndGlobal
