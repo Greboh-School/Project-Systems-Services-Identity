@@ -2,6 +2,8 @@
 WORKDIR /src
 EXPOSE 80
 EXPOSE 443
+ARG NUGET_USERNAME
+ARG NUGET_TOKEN
 
 COPY ["School.Project.Systems.Services.Identity/School.Project.Systems.Services.Identity.csproj", "School.Project.Systems.Services.Identity/"]
 COPY ["NuGet.config", "School.Project.Systems.Services.Identity/"]
