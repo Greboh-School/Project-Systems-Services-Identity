@@ -32,6 +32,8 @@ public class IdentityService : IIdentityService
         _userManager = userManager;
         _signInManager = signInManager;
         _logger = logger;
+        
+        _logger.LogInformation("Service is running");
     }
 
     public async Task<ApplicationUserDTO> Create(IdentityCreateRequest request)
@@ -75,7 +77,7 @@ public class IdentityService : IIdentityService
         _logger.LogInformation("Successfully created identity for {username} with id: {id}", entity.UserName, entity.Id);
 
         var dto = entity.Adapt<ApplicationUserDTO>();
-        
+
         return dto;
     }
 
