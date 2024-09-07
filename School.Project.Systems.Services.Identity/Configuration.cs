@@ -4,6 +4,7 @@ using School.Project.Systems.Identity.Services;
 using School.Project.Systems.Services.Identity.Models.Entities;
 using School.Shared.Core.Abstractions;
 using School.Shared.Core.Persistence.Extensions;
+using Serilog;
 using TokenOptions = School.Project.Systems.Services.Identity.Models.Options.TokenOptions;
 
 namespace School.Project.Systems.Identity;
@@ -30,5 +31,7 @@ public class Configuration : ServiceConfiguration
         
         services.AddScoped<IIdentityService, IdentityService>();
         services.AddScoped<ITokenService, TokenService>();
+        
+        Log.Information("Injected services");
     }
 }

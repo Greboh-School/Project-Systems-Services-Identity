@@ -32,8 +32,6 @@ public class IdentityService : IIdentityService
         _userManager = userManager;
         _signInManager = signInManager;
         _logger = logger;
-        
-        _logger.LogInformation("Service is running");
     }
 
     public async Task<ApplicationUserDTO> Create(IdentityCreateRequest request)
