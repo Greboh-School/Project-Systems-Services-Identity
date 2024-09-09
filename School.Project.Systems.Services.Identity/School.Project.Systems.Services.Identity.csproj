@@ -7,14 +7,21 @@
         <InvariantGlobalization>true</InvariantGlobalization>
         <RootNamespace>School.Project.Systems.Identity</RootNamespace>
     </PropertyGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="School.Shared.Core" Version="0.0.3" />
+        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.0.2"/>
+    </ItemGroup>
 
     <ItemGroup>
         <ProjectReference Include="..\School.Project.Systems.Services.Identity.Models\School.Project.Systems.Services.Identity.Models.csproj"/>
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="School.Shared.Core" Version="0.0.1" />
-        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.0.2"/>
+        <Content Include="Migrations\Scripts\*.sql">
+            <Link>Migrations\Scripts\%(Filename)%(Extension)</Link>
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
     </ItemGroup>
 
 </Project>

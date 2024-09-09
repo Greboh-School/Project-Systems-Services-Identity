@@ -8,7 +8,7 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.8" />
-        <PackageReference Include="School.Shared.Core.Persistence" Version="0.0.1" />
+        <PackageReference Include="School.Shared.Core.Persistence" Version="0.0.2" />
     </ItemGroup>
 
 </Project>
