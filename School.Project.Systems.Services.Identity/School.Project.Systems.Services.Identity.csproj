@@ -9,7 +9,7 @@
     </PropertyGroup>
     
     <ItemGroup>
-        <PackageReference Include="School.Shared.Core" Version="0.0.2" />
+        <PackageReference Include="School.Shared.Core" Version="0.0.3" />
         <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.0.2"/>
     </ItemGroup>
 
